@@ -92,7 +92,7 @@ class Lastfm
           [:from, nil]
         ]
       ) do |response|
-        response.xml['recenttracks']['track']
+        response.xml['recenttracks']
       end
 
       regular_method(
