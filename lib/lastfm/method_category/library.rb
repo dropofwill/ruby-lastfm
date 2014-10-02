@@ -9,7 +9,7 @@ class Lastfm
           [:page, nil]
         ]
       ) do |response|
-        Util.force_array(response.xml['artists']['artist'])
+        Util.force_array(response.xml['artists'])
       end
 
       regular_method(
@@ -22,7 +22,7 @@ class Lastfm
           [:limit, nil]
         ]
       ) do |response|
-        Util.force_array(response.xml['tracks']['track'])
+        Util.force_array(response.xml['tracks'])
       end
     end
   end
